@@ -1,0 +1,76 @@
+:root{
+    --padding: 10px;
+    --color: black;
+    --color1: white;
+
+
+}
+
+body{
+    display: grid;
+    grid-template-columns: 160px 1fr 170px;
+    grid-template-rows: 60px 1fr 70px;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    gap: var(--padding);
+    background-color: var(--color);
+}
+
+
+.uppernav {
+    grid-row: 1;
+    grid-column: 1 / 4;
+    background-color: red;
+    text-align: center;
+    }
+
+#side_nav{
+    grid-column: 3 / 4;
+    grid-row: 2;
+    background-color: whitesmoke;
+}
+
+#content{
+    grid-column: 1 / 3;
+    grid-row: 2;
+    background-color: white;
+}
+
+footer{
+    grid-column: 1 / 4;
+    grid-row: 3;
+    background: red;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+
+    padding-top: calc(var(--padding) * 10);
+    align-items: center;
+    align-self: baseline;
+    gap: var(--padding);
+}
+
+::placeholder {
+    color: var(--color);
+    opacity: 0.5;
+    text-align: center;
+}
+
+.input {
+    background-color: var(--color1);
+    color: var(--color);
+}
+
+.error-hint {
+    color: red;
+    justify-self: end;
+}
+
+#list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
